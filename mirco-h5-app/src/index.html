@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
+    <!-- 360 使用Google Chrome Frame -->
+    <meta name="renderer" content="webkit" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <!-- 清除默认样式 -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- 增加 base 标签，设置资源基础路径，解决图片路径报错问题 -->
+    <base href="http://127.0.0.1:5500/micro-front-demo/mirco-h5-app/src/" />
+    <style>
+      html {
+        width: 600px;
+        height: 300px;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 600px;
+        height: 300px;
+        padding: 16px;
+        background: url(./img/bg.png) no-repeat center center / 100% 100%;
+      }
+
+      h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+
+      img {
+        width: 66px;
+        height: 66px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>H5 微应用</h1>
+      <img src="./img/icon.png" />
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="//localhost:8083/entry.js" entry></script>
+  </body>
+</html>
